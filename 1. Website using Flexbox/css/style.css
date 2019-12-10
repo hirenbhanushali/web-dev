@@ -23,6 +23,17 @@ p {
 }
 
 /* Utility Classes */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.text-center {
+    text-align: center;
+}
+
 .text-primary {
     color: #c3c3c3;
 }
@@ -46,6 +57,12 @@ p {
     line-height: 1.1;
 }
 
+.m-heading {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+}
+
 .btn {
     display: inline-block;
     background: #333;
@@ -59,6 +76,11 @@ p {
     background: #c3c3c3;
     color: #333;
 }
+
+.py-1 {padding: 1.5rem 0;}
+.py-1 {padding: 2rem 0;}
+.py-1 {padding: 3rem 0;}
+
 /* Navbar */
 #navbar {
     display:flex;
@@ -104,10 +126,33 @@ p {
     align-items: center;
     height: 100%;
     padding: 0 2rem;
-    background: rgba(0,0,0,0.3);
-    /* overlay */
-    
-    
+    background: rgba(0,0,0,0.3);    
 }
 
+/* What we do */
+#what .items {
+    display: flex;
+    padding: 1rem;
+}
 
+#what .items .item {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+#what .items .item i {
+    background: #c3c3c3;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* Who we are */
+#who {
+    display: flex;
+}
+
+#who div {
+    flex: 1;
+}
