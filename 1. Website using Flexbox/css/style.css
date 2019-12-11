@@ -38,6 +38,10 @@ p {
     color: #c3c3c3;
 }
 
+.bg-dark {
+    background: #333;
+    color: white;
+}
 .logo {
     display: flex;
 }
@@ -51,7 +55,7 @@ p {
     font-family: "Times New Roman", sans-serif;
 }
 
-.l-heading {
+.l-heading r{
     font-size: 3rem;
     margin-bottom: 0.5rem;
     line-height: 1.1;
@@ -77,9 +81,23 @@ p {
     color: #333;
 }
 
+.list {
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: #444 dotted 1px;
+}
+
 .py-1 {padding: 1.5rem 0;}
-.py-1 {padding: 2rem 0;}
-.py-1 {padding: 3rem 0;}
+.py-2 {padding: 2rem 0;}
+.py-3 {padding: 3rem 0;}
+
+.p-1 {padding: 1.5rem;}
+.p-2 {padding: 2rem;}
+.p-3 {padding: 3rem;}
 
 /* Navbar */
 #navbar {
@@ -133,6 +151,7 @@ p {
 #what .items {
     display: flex;
     padding: 1rem;
+    margin: none;
 }
 
 #what .items .item {
@@ -155,4 +174,32 @@ p {
 
 #who div {
     flex: 1;
+}
+
+#who .who-img {
+    background: url("https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg?cs=srgb&dl=man-in-beige-blazer-holding-tablet-computer-3184328.jpg&fm=jpg") no-repeat center center/cover;
+    margin: none;
+}
+
+/* Clients */
+#clients {
+    display: flex;
+    flex-direction: column;
+}
+
+.itemmm{
+    text-align: center;
+    padding-top: 2rem;
+}
+#clients .itemsss {
+    display:flex;
+    justify-content: space-around;
+}
+
+#clients .itemsss .logosss{
+    padding: 2rem;
+}
+#clients .itemsss .logosss img{
+    width:5rem;
+    height:5rem;
 }
