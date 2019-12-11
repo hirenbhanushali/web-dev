@@ -42,6 +42,11 @@ p {
     background: #333;
     color: white;
 }
+
+.bg-primary {
+    background: #c3c3c3;
+    color: #333;
+}
 .logo {
     display: flex;
 }
@@ -78,6 +83,20 @@ p {
 
 .btn:hover {
     background: #c3c3c3;
+    color: #333;
+}
+
+.btnn {
+    display: inline-block;
+    background: #333;
+    color: white;
+    padding: 0.5rem 0.8rem;
+    border:none;
+    border-radius: 0.2rem;
+}
+
+.btnn:hover {
+    background: white;
     color: #333;
 }
 
@@ -131,7 +150,7 @@ p {
 
 /* Showcase */
 #showcase {
-    background: #333 url("https://wallpapercave.com/wp/cK5lWzk.jpg") no-repeat center center/cover;
+    background: #333 url("https://i.postimg.cc/t4cSPdqp/background.jpg") no-repeat center center/cover;
     height: 90vh;
     color: white;
 }
@@ -193,13 +212,36 @@ p {
 }
 #clients .itemsss {
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 #clients .itemsss .logosss{
-    padding: 2rem;
+    padding: 2rem 5rem;
 }
 #clients .itemsss .logosss img{
     width:5rem;
     height:5rem;
+}
+
+/* Contact */
+#contact {
+    display: flex;
+}
+
+#contact .map, #contact .contact-form{
+    flex:1;
+}
+
+#contact .contact-form .form-group {
+    margin:0.75rem;
+}
+
+#contact .contact-form label {
+    display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
 }
