@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The Presentation</title>
+	<script src="https://kit.fontawesome.com/ec3ce42db9.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- !st Page -->
+	<section id="page-1" class="page">
+		<h1>Welcome to 1st Slide</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non accusamus eos totam amet eligendi quaerat quos sit! Ab veniam, ipsum, vero earum aliquid impedit quis deserunt laboriosam nesciunt accusantium fugiat.</p>
+		<div>
+			<a href="#page-2" class="btn">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+		</div>
+	</section>
+	
+	<!-- 2nd Page -->
+	<section id="page-2" class="page">
+		<h1>Welcome to 2nd Slide</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non accusamus eos totam amet eligendi quaerat quos sit! Ab veniam, ipsum, vero earum aliquid impedit quis deserunt laboriosam nesciunt accusantium fugiat.</p>
+		<div>
+			<a href="#page-1" class="btn btn-dark">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
+			<a href="#page-3" class="btn">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+		</div>
+	</section>
+	
+		<!-- 3rd Page -->
+	<section id="page-3" class="page">
+		<h1>Welcome to 3rd Slide</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non accusamus eos totam amet eligendi quaerat quos sit! Ab veniam, ipsum, vero earum aliquid impedit quis deserunt laboriosam nesciunt accusantium fugiat.</p>
+		<div>
+			<a href="#page-2" class="btn btn-dark">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
+			<a href="#page-4" class="btn">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+		</div>
+	</section>
+	
+			<!-- 4th Page -->
+	<section id="page-4" class="page">
+		<h1>Welcome to 4th Slide</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non accusamus eos totam amet eligendi quaerat quos sit! Ab veniam, ipsum, vero earum aliquid impedit quis deserunt laboriosam nesciunt accusantium fugiat.</p>
+		<div>
+			<a href="#page-3" class="btn">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
+		</div>
+	</section>
+	
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  
+	<script>
+    // Smooth Scrolling
+    $('.btn').on('click', function(event) {
+        if (this.hash !== '') {
+          event.preventDefault();
+          const hash = this.hash;
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top
+            },
+            800
+          );
+        }
+      });
+  </script>
+	
+</body>
+</html>
