@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Hiren Bhanushali</title>
+	<!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- CSS Files -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/now-ui-kit.css?v=1.3.0" rel="stylesheet" />
+   <link href="css/custom.css" rel="stylesheet" />
+</head>
+<body class="index-page profile-page sidebar-collapse">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg modbar fixed-top navbar-transparent " color-on-scroll="400">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="javascript:void(0)" onclick="scrollToDownload()" rel="tooltip" title="Developed by Hiren" data-placement="bottom" target="_blank">
+          The portfolio
+        </a>
+        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-bar top-bar"></span>
+          <span class="navbar-toggler-bar middle-bar"></span>
+          <span class="navbar-toggler-bar bottom-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="img/blurred-image-1.jpg">
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <div class="wrapper">
+    <div class="page-header clear-filter" filter-color="blue">
+      <div class="page-header-image" data-parallax="true" style="background-image:url('img/header.jpg');">
+      </div>
+      <div class="container">
+        <div class="content-center brand">
+         	<div class="buffer-space col-12"></div>
+          <img class="n-logo" src="img/profile.png" alt="">
+          <h1 class="h1-seo">Let's Create the Future</h1>
+          <h3 class="text-uppercase">Making Dreams come True</h3>
+        </div>
+        <h6 class="category category-absolute">Developed by
+          <a href="http://invisionapp.com/" target="_blank">
+            @hiren.
+          </a></h6>
+      </div>
+    </div>
+    
+    <div id="#section-portfolio" class="section">
+      <div class="container">
+        <h3 class="title">About me</h3>
+        <h5 class="description">Hi, I am Hiren, an India-based full stack developer, currently pursuing bachelors in engineering and working as a freelancer. I am highly skilled and professional. Here are some of the previous projects</h5>
+        <div class="row">
+          <div class="col-md-6 ml-auto mr-auto">
+            <h4 class="title text-center section-portfolio">My Portfolio</h4>
+          </div>
+          <!-- Tab panes -->
+          <div class="tab-content gallery">
+            <div class="tab-pane active" id="home" role="tabpanel">
+              <div class="col-md-10 ml-auto mr-auto">
+                <div class="row collections">
+                  <div class="col-md-6">
+                    <img src="img/bg1.jpg" alt="" class="img-raised">
+                    <img src="img/bg3.jpg" alt="" class="img-raised">
+                  </div>
+                  <div class="col-md-6">
+                    <img src="img/bg8.jpg" alt="" class="img-raised">
+                    <img src="img/bg7.jpg" alt="" class="img-raised">
+                  </div>
+                  <div class="col-md-6">
+                    <img src="img/bg3.jpg" alt="" class="img-raised">
+                    <img src="img/bg8.jpg" alt="" class="img-raised">
+                  </div>
+                  <div class="col-md-6">
+                    <img src="img/bg7.jpg" alt="" class="img-raised">
+                    <img src="img/bg6.jpg" class="img-raised">
+                  </div>
+                </div>
+              </div>
+						</div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+	</div>
+    
+  <!--   Core JS Files   -->
+  <script src="js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="js/core/popper.min.js" type="text/javascript"></script>
+  <script src="js/core/bootstrap.min.js" type="text/javascript"></script>
+  <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+  <script src="js/plugins/bootstrap-switch.js"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+  <script src="js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+  <script src="js/now-ui-kit.js?v=1.3.0" type="text/javascript"></script>
+  <script>
+    $(document).ready(function() {
+      // the body of this function is in assets/js/now-ui-kit.js
+      nowuiKit.initSliders();
+    });
+
+    function scrollToDownload() {
+
+      if ($('.section-portfolio').length != 0) {
+        $("html, body").animate({
+          scrollTop: $('.section-portfolio').offset().top
+        }, 1000);
+      }
+    }
+  </script>
+</body>
+</html>
